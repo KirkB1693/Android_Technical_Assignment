@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CARFAX</string>
+    <string name="error_text">An error occurred while loading resources.</string>
+    <string name="call_dealer_button">Call Dealer</string>
+    <string name="vehicle_info_label">Vehicle Info</string>
+    <string name="location_label">Location</string>
+    <string name="exterior_color_label">Exterior Color</string>
+    <string name="interior_color_label">Interior Color</string>
+    <string name="drive_type_label">Drive Type</string>
+    <string name="transmission_label">Transmission</string>
+    <string name="body_style_label">Body Style</string>
+    <string name="engine_label">Engine</string>
+    <string name="fuel_label">Fuel</string>
+    <string name="car_photo_content_description">Car Photo</string>
+</resources>

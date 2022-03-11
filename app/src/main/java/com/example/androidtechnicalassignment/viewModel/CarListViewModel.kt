@@ -43,7 +43,7 @@ class CarListViewModel(private val datasource: CarDao) : ViewModel(){
                 .subscribeWith(object: DisposableSingleObserver<CarfaxJsonResponse>() {
 
                     override fun onError(e: Throwable?) {
-                        loadSavedCars()
+                        loadSavedCars()  // if unable to load cars from web, try to load those saved locally
                     }
 
                     override fun onSuccess(value: CarfaxJsonResponse?) {
@@ -51,7 +51,7 @@ class CarListViewModel(private val datasource: CarDao) : ViewModel(){
                         cars.value = carListings ?: arrayListOf()
                         carLoadError.value = false
                         loading.value = false
-                        saveCarsLocally()
+                        saveCarsLocally()  // if cars are successfully loaded save them locally for future use
                     }
 
                 })
